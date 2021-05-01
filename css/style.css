@@ -1,0 +1,477 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #f5f5f5;
+    color: #4e4e4e;
+}
+
+
+header{
+    background-image: url(../images/intro-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    
+}
+.header-layer{
+    background-color: rgba(0,0,0,0.4);
+    
+}
+header h2{
+    font-size: 72px;
+    font-weight: 600;
+}
+header #moving::after{
+
+    content: "";
+    animation-name: typing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    font-size: 40px;
+    animation-direction: alternate-reverse;
+}
+@keyframes typing{
+    0% {
+        content:"W" ;
+    }
+    2% {
+        content:"We" ;
+    }
+    4% {
+        content:"Web" ;
+    }6% {
+        content:"Web  " ;
+    }8% {
+        content:" Web D" ;
+    }10% {
+        content:"Web De" ;
+    }12% {
+        content:"Web Dev" ;
+    }14% {
+        content:"Web Deve" ;
+    }16% {
+        content:"Web Devel" ;
+    }
+    18% {
+        content:"Web Develo" ;
+    }
+    20% {
+        content:"Web Develop" ;
+    }
+    22% {
+        content:"Web Develope" ;
+    }
+    24% {
+        content:"Wev Developer " ;
+    }
+    26% {
+        content:" Wev Developer |" ;
+    }
+    28% {
+        content:" Wev Develope |" ;
+    }
+    30% {
+        content:" Wev Develop |" ;
+    }
+}
+#Profile .items .item-img{
+    overflow: hidden;
+}
+nav{
+    height: 70px;
+    background-color: rgba(0,0,0,0.4);
+
+}
+nav h1{
+    color: white;
+    font-size: 26px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    
+    
+}
+
+nav  ul li a:hover {
+    color: white;
+    text-decoration: none;
+    transition:  all 0.5s ease-in-out;
+    animation-name: line;
+    animation-duration: 1s;
+    animation-direction: alternate;
+
+
+}
+.about-content {
+    background-color: white;
+    box-shadow: 2px 2px 2px #abb1b8  ,  -2px -2px 4px #abb1b8;
+}
+#about .img-info span , #about .skills p{
+    font-weight: 600;
+    font-size: 17.5px;
+    color: #1e1e1e;
+}
+
+.language{
+    font-size: 16px;
+    font-weight: 400;
+}
+.skill .progress {
+    background-color: #cde1f8;
+    border-radius: 0;
+}
+.title{
+    position: relative;
+}
+.about-title{
+    font-size: 40px;
+    color: #1e1e1e;
+}
+.about-title::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 25%;
+    top:97%;
+    left: 0;
+    margin: 10px 0px;
+}
+#services{
+    box-sizing: border-box;
+}
+.service-title{
+    position: relative;
+   
+    
+}
+.service-title h3{
+    font-weight: 700;
+    font-size: 35px;
+    color: black;
+}
+
+.service-title h3::after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    background-color: #0078ff;
+    width: 5%;
+    top:95%;
+    left: 47%;
+    margin: 10px 0px;
+
+}
+
+
+#services .serice-info{
+    background-color: white;
+}
+#services i {
+    font-size: 50px;
+    padding: 10px 15px;
+    
+    
+}
+
+#services .ser-icon{
+    height: 25%;
+    width: 30%;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #0078ff;
+    color: black;
+    transition: all 1s;
+    
+}
+#services  .serice-info:hover .ser-icon{
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #cde1f8;
+    color: white;
+
+} 
+ #services .serice-info  {
+     border-radius: 6px;
+     box-shadow:  0px  2px 2px rgb(209, 208, 208) ;
+ }
+
+ .icons{
+     height: 400px;
+     width: 100%;
+     background-image: url(../images/post-3.jpg) ;
+     background-size: 100% 100%;
+     background-attachment: fixed;
+     background-position: center center;
+     color:white;
+    
+ }
+ .icons .icon{
+     background-color: #0077ff9f;
+     height: 100%;
+     
+     
+    
+ }
+ .icons .icon span{
+     font-size: 30px;
+     font-weight: 600;
+    
+ }
+ .icons .type i{
+     font-size: 25px;
+     font-weight: 600;
+     border-radius: 50%;
+     border: 8px solid #cde1f8;
+     padding: 15px;
+     color: #f3f3f3 ;
+     margin:10px;
+ }
+ .icons .icon .container{
+     position: relative;
+     top: 30%;
+ }
+ .items .item-img  img{
+     width: 100%;
+     height: 60%;
+     margin: 0px;
+     transition: all 1s;
+ }
+ .items .fa-plus{
+     font-size: 20px;
+     color:#0077ff ;
+     transform: translateX(-8px);
+    
+ }
+ .items .bg-icon{
+     border: 1px solid #0077ff ;
+     border-radius: 50%;
+     padding: 5px 17px;
+    
+ }
+ .items h4{
+     font-size: 20px;
+     color: black;
+ }
+ #Profile .items:hover img{
+   transform: scale(1.2);
+ }
+ #Profile .items , #Blog .items{
+     background-color: white;
+     box-shadow:  0px  2px 2px rgb(209, 208, 208) ;
+     border: 1px solid  rgba(0,0,0,.125);
+
+    
+    
+ }
+ #Profile .items span{
+     color: #0077ff ;
+    
+ }
+ #work{
+    width: 100%;
+    background-image: url(../images/overlay-bg.jpg) ;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    color:white
+
+ }
+#work .container-fluid{
+    background-color:  #0077ff9f;
+}
+ #work .feedback{
+     margin: 10% auto;
+     text-align: center;
+ }
+ #work .feedback img{
+     border-radius: 50%;
+     margin: auto;
+    
+ }
+ #work .work-icon{
+     background-color: white;
+     border-radius: 50%; 
+     width: 10%;
+     margin: auto;
+     padding: 10px 0px;
+ }
+ #work .work-icon i {
+     color:#0077ff ;
+     font-size: 35px;
+     
+ }
+ #work .carousel-indicators {
+     transform: translateY(-120px);
+ }
+#Blog .subject{
+    background-color: #0077ff ;
+    margin: 2px auto ;
+    width: 20%;
+    text-align: center;
+    color: white;
+    position: relative;
+    transform: translateY(-15px);
+
+}
+#Blog .foot-blog{
+ 
+    background-color: (0,0,0,.03);
+    border-top: 1px solid rgba(0,0,0,.125);
+    background-color:#f5f5f5;
+    width: 100%;
+    overflow: hidden;
+
+}
+#Blog .foot-blog .info p   {
+    transform: translateY(10px);
+}
+#Blog .foot-blog .time i{
+    transform: translateY(5px);
+
+}
+#Blog .service-content .items{
+    box-shadow: 0 2px 2px gray;
+    height: 100%;
+}
+
+#contact  {
+    width: 100%;
+    background-image: url(../images/overlay-bg.jpg) ;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-position: center center;
+}
+#contact .content-layer{
+
+    background-color:  #0077ff9f;
+    width: 100%;
+    height: 100%;
+
+    
+}
+#contact .contact-content{
+    width: 80%;
+    height: 90%;
+    background-color: #fff;
+}
+
+#contact .contact-title h3{
+    font-weight: 400;
+    font-size: 35px;
+    color: black;
+}
+
+#contact .contact-content .contact-title h3::after , #contact .contact-info .contact-title h3::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: #0078ff;
+    width: 20%;
+    top:14%;
+    left: 10.5%;
+    margin: 10px 0px;
+
+
+}
+#contact .contact-info .contact-title h3::after{
+    left: 5%;
+}
+
+
+#contact input , #contact textarea{
+    padding: 10px;
+    color: #4e4e4e;
+    border: 1px solid #4e4e4e;
+    
+}
+#contact input:hover  ,#contact textarea:hover{
+    box-shadow: 0 0 0 2px #cde1f8;
+    border: 1px solid #0078ff;
+
+}
+#contact button{
+    background-color: #0077ff;
+    padding: 15px 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+
+
+}
+#contact .list-icons i{
+    color: #0077ff;
+}
+#contact .icons-brand div{
+    border-radius: 50px;
+    padding: 2px 5px;
+    border :3px solid #0077ff;
+    margin-left: 10px;
+    font-size: 20px;
+}
+#contact .icons-brand div:hover{
+    background-color: #0078ff;
+    box-shadow: 0 0 0 3px #cde1f8;
+    color: white;
+
+}
+.foot{
+    color: #fff;
+    margin-top: 10px;
+}
+.foot span{
+    font-weight: 700;
+}
+@media screen and (max-width: 950px) {
+    
+    #services i {
+        font-size: 25px;
+        padding: 10px 15px;
+        
+        
+  }
+  .items .bg-icon{
+   transform: translateX(-30px);
+   
+}
+#work .carousel-indicators  {
+    transform: translateY(-50px);
+}
+#work .work-icon{
+    padding: 10px 20px;
+}
+#work .work-icon i{
+    transform: translateX(-10px);
+    font-size: 20px;
+}
+#Blog .items p  {
+    font-size: 14px;
+   
+}
+#Blog .items h4{
+    font-size: 17px;
+}
+#Blog .items .info img{
+    width: 40%;
+    height: 40%;
+}
+
+
+
+}
+@media screen and (max-width: 650px) {
+    .icons .type{
+        font-size: 16px;
+    }
+    #contact .contact-info .contact-title h3::after{
+        left: 5%;
+        top:30%
+    }
+   
+
+}
